@@ -27,15 +27,8 @@ Both modules use hourly time series data representing individual Norwegian build
 
 ## Quickstart
 
-To get started with the tool locally, install the dependencies and run the example script:
-
-```bash
-git clone https://github.com/synnekreklinglien/COF-tool
-cd COF-tool
-pip install -r requirements.txt
-python examples/example.py
-```
-
+To get an overview of the app, the input file and the outputs, have a look at the streamlit app. 🔗 [https://cof-tool.streamlit.app/](https://cof-tool.streamlit.app/)
+To get started with the tool locally, download the modules, install the dependencies (requirements.txt) and run the example script examples/example.py
 The example script in `examples/` demonstrates how to load a building file, run classification, and run disaggregation using the trained models.
 
 ---
