@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+python-multipart
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.5.2
+catboost==1.2.7
+scipy
+joblib
+pwlf
+holidays
+huggingface_hub
+pyarrow
+seaborn
+# force rebuild______

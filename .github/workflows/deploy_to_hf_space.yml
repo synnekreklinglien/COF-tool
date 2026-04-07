@@ -1,0 +1,45 @@
+name: Deploy backend to Hugging Face Space
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Deploy hf_backend to Hugging Face Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Copy latest library code into backend folder (CI-only)
+          rm -rf hf_backend/modules
+          cp -R modules hf_backend/modules
+
+          # Remove ONLY binary model files from the copy (keep CSV resources etc.)
+          find hf_backend/modules -type f \( \
+            -name "*.joblib" -o \
+            -name "*.cbm" -o \
+            -name "*.pkl" -o \
+            -name "*.pt" -o \
+            -name "*.pth" -o \
+            -name "*.onnx" \
+          \) -delete
+
+          # Stage + temporary commit so subtree includes the copied code (without binaries)
+          git add -A hf_backend/modules
+          git commit -m "ci: bundle modules for deploy (no binaries)" || true
+
+          git subtree split --prefix hf_backend -b hf-space
+
+          git remote remove space 2>/dev/null || true
+          git remote add space https://synnekreklinglien:${HF_TOKEN}@huggingface.co/spaces/synnekreklinglien/COF-tool
+          git push --force space hf-space:main

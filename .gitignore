@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+app/tmp/
+tmp/
+app/app_local.py
+examples/catboost_info/
