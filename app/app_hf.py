@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jun  1 13:30:38 2026
+
+@author: synnekl
+"""
+
 import sys
 from pathlib import Path
 import traceback
@@ -45,7 +52,7 @@ The authors gratefully acknowledge support from the Research Council of Norway (
 The source code for this tool is available on GitHub: https://github.com/synnekreklinglien/COF-tool
 
 If you use this tool or any results produced by it, you must cite the following article:
-COF-Tool: A supervised method and a tool for building classification and disaggregation of heating energy from hourly electricity load profiles from buildings. Synne Krekling Lien & Jayaprakash Rajasekharan.
+COF-Tool: A supervised method and a tool for building classification and disaggregation of heating energy from hourly electricity load profiles from buildings. Synne Krekling Lien & Jayaprakash Rajasekharan
 
 Contact: Synne.lien@sintef.no
 
@@ -300,7 +307,7 @@ The results are presented as probabilities across all building classes. A high p
         st.write("All class probabilities:")
         st.dataframe(class_prob)
 
-	st.warning(
+        st.warning(
             "**Note:** The classification module is trained on a dataset with substantial "
             "class imbalance. Some building categories, such as hospitals, hotels, "
             "shops, and universities, are represented by relatively few buildings in "
@@ -311,7 +318,6 @@ The results are presented as probabilities across all building classes. A high p
             "the training data distribution, see the reference in the acknowledgements section.",
             icon="⚠️",
         )
-
 
 
 
