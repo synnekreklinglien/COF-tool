@@ -28,7 +28,7 @@ DISAGGREGATE_ENDPOINT = f"{HF_BACKEND_URL}/disaggregate"
 # -----------------------------
 # Page header / intro
 # -----------------------------
-st.title("COF-Tool: A tool for classification and heat load disaggregation of hourly electricity load profiles from buildings")
+st.title("COF-Tool: A tool for building classification and disaggregation of heating energy from hourly electricity load profiles from buildings")
 
 st.markdown(
     """

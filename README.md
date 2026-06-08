@@ -1,4 +1,4 @@
-# COF-Tool: A tool for classification and heat load disaggregation from hourly electricity load profiles from buildings
+# COF-Tool: A tool for building classification and disaggregation of heating energy from hourly electricity load profiles from buildings
 
 COF-Tool is a Python tool for classification of building characteristics and disaggregation of electricity use for heating based on hourly electricity smart meter data. The models are trained on real-life data from Norwegian buildings and are intended for use on Norwegian building data.
 
