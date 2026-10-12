@@ -94,7 +94,14 @@ The example files and other datasets are open and may be used for exploration, f
 
 The tool and modelling framework are described in the following research article:
 
-ARTICLE REFERENCE
+
+"COF-Tool: a supervised method and a tool for building classification and disaggregation of electricity for heating from hourly electricity load profiles from buildings"
+S. K. Lien and J. Rajasekharan.
+Energy Informatics, vol. 9, no. 1, p. 66, Jul. 2026.
+DOI: 10.1186/s42162-026-00681-2
+URL: https://doi.org/10.1186/s42162-026-00681-2
+ 
+
 
 If you use this tool or any results produced by it, you must cite the article above.
 
@@ -126,4 +133,4 @@ Synne Krekling Lien
 
 Email: [synnekreklinglien@gmail.com](mailto:synnekreklinglien@gmail.com)
 
-Last updated: 12.03.2026
+Last updated: 12.10.2026

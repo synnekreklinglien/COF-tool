@@ -52,11 +52,14 @@ The authors gratefully acknowledge support from the Research Council of Norway (
 The source code for this tool is available on GitHub: https://github.com/synnekreklinglien/COF-tool
 
 If you use this tool or any results produced by it, you must cite the following article:
-COF-Tool: A supervised method and a tool for building classification and disaggregation of heating energy from hourly electricity load profiles from buildings. Synne Krekling Lien & Jayaprakash Rajasekharan
+"COF-Tool: a supervised method and a tool for building classification and disaggregation of electricity for heating from hourly electricity load profiles from buildings". S. K. Lien and J. Rajasekharan.
+Energy Informatics, vol. 9, no. 1, p. 66, Jul. 2026.
+DOI: 10.1186/s42162-026-00681-2
+URL: https://doi.org/10.1186/s42162-026-00681-2
 
 Contact: Synne.lien@sintef.no
 
-Last updated: 12.03.2026
+Last updated: 12.10.2026
 """
     )
 
